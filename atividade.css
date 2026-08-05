@@ -1,0 +1,84 @@
+.barra {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+.direita {
+    position: absolute;
+    right: 50px;
+}
+
+footer {
+    margin-top: auto;
+    align-self: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+html {
+    height: 99%;
+    min-height: 99%;
+}
+
+
+.grid-sensores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.card-sensor {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-sensor.critico {
+    border-color: #d9534f;
+    background-color: #fdf2f2;
+}
+
+.card-sensor h4 {
+    margin: 0 0 8px 0;
+}
+
+.card-sensor .valor {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.status-tag.normal {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-tag.critico {
+    background-color: #f8d7da;
+    color: #721c24;
+}
